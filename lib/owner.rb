@@ -1,9 +1,9 @@
 class Owner
   
-  attr_reader :name
+  attr_reader :NAME
   
   def initialize(name = nil)
-    NAME = name
+    @NAME = name
   end
    
 end
