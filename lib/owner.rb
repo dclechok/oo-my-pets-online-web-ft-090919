@@ -28,6 +28,6 @@ class Owner
   end
   
   def cats
-    Cat.all == Cat.owner.name
+    Cat.all.map {|cats| cats == Cat.owner}
   end
 end
