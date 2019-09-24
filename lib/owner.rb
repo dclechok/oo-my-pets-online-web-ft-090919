@@ -28,6 +28,6 @@ class Owner
   end
   
   def cats
-    Cat.all.map {|cats| cats.owner == self.name}
+    Cat.all.select {|cats| cats.owner == self.name}
   end
 end
