@@ -28,6 +28,6 @@ class Owner
   end
   
   def cats
-    Cat.all == owner.name
+    Cat.all == Cat.owner.name
   end
 end
